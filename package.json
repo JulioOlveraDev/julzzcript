@@ -1,0 +1,26 @@
+{
+  "name": "julzzcript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "start": "node apps/api/dist/main.js"
+  },
+  "keywords": [],
+  "author": "Julio Olvera",
+  "license": "ISC",
+  "workspaces": [
+    "apps/*"
+  ],
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "turbo": "^1.10.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
